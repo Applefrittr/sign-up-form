@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Source+Sans+Pro:wght@200&display=swap');
+
+body    {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(35, 35, 35);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+div.container  {
+    height: 100vh;
+    width: max(600px, 65vw);
+    display: flex;
+    position: relative;
+}
+
+div.hero    {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    width: 25vw;
+    background-image: url(tets.jpg);
+    background-size: cover;
+    position: relative;
+}
+
+p.logo  {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    color: white;
+    font-size: 2rem;
+    top: 225px;
+    background-color: rgba(40, 40, 40, 0.5);
+    font-family: 'Press Start 2P', cursive;
+}
+
+p.credit    {
+    color: white;
+    font-size: 0.8rem;
+}
+
+p.credit>a  {
+    text-decoration: none;
+    color: white;
+}
+
+
+div.form-wrapper    {
+    flex: auto;
+    width: 40vw;
+    background-color: white;
+}
