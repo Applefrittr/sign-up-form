@@ -49,6 +49,37 @@ p.credit>a  {
 
 div.form-wrapper    {
     flex: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 40vw;
-    background-color: white;
+    background-color: rgb(235, 235, 235);
+    font-size: 1.15rem;
+    font-weight: bold;
+}
+p.discription   {
+    padding: 1rem;
+}
+
+form    {
+    border-top: 1px  black;
+    border-bottom: 1px  black;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 3rem;
+    row-gap: 1rem;
+    padding: 1rem;
+    box-shadow: 0 3px 5px black;
+    background-color: white;   
+}
+
+form>p  {
+    width: 100%;
+    margin: 0;
+}
+
+form>div    {
+    display: flex;
+    flex-direction: column;
+    width: min(100%, 250px);
 }
