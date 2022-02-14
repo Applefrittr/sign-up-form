@@ -11,7 +11,7 @@ body    {
 
 div.container  {
     height: 100vh;
-    width: max(600px, 65vw);
+    width: max(700px, 65vw);
     display: flex;
     position: relative;
 }
@@ -144,7 +144,7 @@ p.required  {
 footer  {
     padding-left: 1.5rem;
     font-size: 0.8rem;
-    position: fixed;
+    position: absolute;
     bottom: 0;
     margin-bottom: 1rem;
 }
