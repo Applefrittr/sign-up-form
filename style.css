@@ -6,6 +6,7 @@ body    {
     background-color: rgb(35, 35, 35);
     box-sizing: border-box;
     margin: 0;
+    font-family: sans-serif;
 }
 
 div.container  {
@@ -39,6 +40,7 @@ p.logo  {
 p.credit    {
     color: white;
     font-size: 0.8rem;
+    margin: 1rem;
 }
 
 p.credit>a  {
@@ -54,11 +56,11 @@ div.form-wrapper    {
     justify-content: center;
     width: 40vw;
     background-color: rgb(235, 235, 235);
-    font-size: 1.15rem;
     font-weight: bold;
 }
 p.discription   {
-    padding: 1rem;
+    padding: 1.5rem;
+    margin: 0;
 }
 
 form    {
@@ -67,8 +69,8 @@ form    {
     display: flex;
     flex-wrap: wrap;
     column-gap: 3rem;
-    row-gap: 1rem;
-    padding: 1rem;
+    row-gap: 1.5rem;
+    padding: 1.5rem;
     box-shadow: 0 3px 5px black;
     background-color: white;   
 }
@@ -78,8 +80,58 @@ form>p  {
     margin: 0;
 }
 
+label  {
+    appearance: none;
+    font-size: 0.65rem;
+}
+
+input   {
+    appearance: none;
+    border: 2px solid rgb(235, 235, 235);
+    border-radius: 5px;
+}
+
+input:valid    {
+    outline: none;
+    border: 2px solid rgb(119, 0, 255);
+    box-shadow: 0 1px 3px gray;
+}
+
+input:focus:invalid   {
+    outline: none;
+    border: 2px solid red;
+    box-shadow: 0 1px 3px gray;
+}
+
 form>div    {
     display: flex;
     flex-direction: column;
     width: min(100%, 250px);
+}
+
+button  {
+    appearance: none;
+    margin: 1.5rem;
+    padding: 1rem 4rem;
+    border-radius: 5px;
+    font-weight: bold;
+    color: white;
+    background-color:rgb(119, 0, 255);
+}
+
+p.login {
+    padding-left: 1.5rem;
+    margin: 0;
+}
+
+p.required  {
+    font-size: 0.5rem;
+}
+
+footer  {
+    padding-left: 1.5rem;
+    font-size: 0.8rem;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 1rem;
 }
