@@ -10,7 +10,7 @@ body    {
 }
 
 div.container  {
-    height: 100vh;
+    height: max(825px, 100vh);
     width: max(700px, 65vw);
     display: flex;
     position: relative;
